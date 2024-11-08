@@ -1,0 +1,123 @@
+@base <http://example.com/base/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix ricdft: <https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#> .
+@prefix ricrst: <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+
+<ex:E03_C/010-001_F> a rico:RecordSet;
+    rdfs:label "Fundo do Arquivo da Academia das Cências de Lisboa"@pt;
+    rico:hasRecordSetType ricrst:Fonds;
+    rico:hasOrHadIdentifier "PT/ACL/ACL"^^xsd:localID;
+    rico:hasOrHadName "Fundo do Arquivo da Academia das Cências de Lisboa"@pt;
+    rico:scopeAndContent "O Fundo da Academia das Ciências de Lisboa conserva documentação de natureza histórica, testemunha dos fluxos informacionais intrínsecos à sua orgânica institucional e estrutura interna."@pt;
+    rico:hasOrHadHolder <http://viaf.org/viaf/131912229>;
+    rico:hasBeginningDate "1780"^^xsd:date;
+    rico:hasEndDate "1978"^^xsd:date;
+    rico:includesOrIncluded <ex:E03_C/010-001> .
+
+<ex:E03_C/010-001> a rico:RecordSet;
+    rdfs:label "Correspondência entre Corpos Científicos"@pt;
+    rico:hasRecordSetType ricrst:Series;
+    rico:hasOrHadIdentifier "PT/ACL/ACL/C/010-001"^^xsd:localID;
+    rico:hasOrHadName "Correspondência entre Corpos Científicos"@pt;
+    rico:scopeAndContent "Série documental que integra a correspondência recebida de organizações congéneres estrangeiras."@pt;
+    rico:hasOrHadHolder <http://viaf.org/viaf/131912229>;
+    rico:hasBeginningDate "1802"^^xsd:date;
+    rico:hasEndDate "1978"^^xsd:date;
+    rico:RecordResourceExtent "[250] cartas"@pt;
+    rico:conditionsOfAccess "Acesso Condicionado"@pt .
+
+<http://viaf.org/viaf/131912229> a rico:CorporateBody;
+    rdfs:label "Academia das Ciências de Lisboa"@pt;
+    rico:hasOrHadName "Academia das Ciências de Lisboa"@pt;
+    rico:date "1780"^^xsd:date;
+    rico:hasOrHadCorporateBodyType <https://www.wikidata.org/wiki/Q955824>;
+    rico:isAssociatedWithPlace <https://www.wikidata.org/wiki/Q597> .
+
+<http://viaf.org/viaf/130746794> a rico:CorporateBody;
+    rdfs:label "Académie Royale des Sciences et Belles-Lettres de Bruxelles"@fr;
+    rico:hasOrHadName "Académie Royale des Sciences et Belles-Lettres de Bruxelles"@fr;
+    rico:hasOrHadName "Académie Royale des Sciences, des Lettres et des Beaux-Arts de Belgique"@fr;
+    rico:hasOrHadCorporateBodyType <https://www.wikidata.org/wiki/Q955824>;
+    rico:isAssociatedWithPlace <https://www.wikidata.org/wiki/Q239> .
+
+<https://www.wikidata.org/wiki/Q955824> rdfs:label "\"Sociedade científica\""@pt .
+
+<ex:E15_C/010-001_001> a rico:Activity;
+    rdfs:label "Permuta bibliográfica"@pt;
+    rico:activityType "Permuta bibliográfica"@pt .
+
+<https://www.wikidata.org/wiki/Q597> a rico:Place;
+    rdfs:label "Lisboa"@pt;
+    rico:hasOrHadCoordinates geonames:2267057;
+    rico:isOrWasLocationOf <http://viaf.org/viaf/138109643> .
+
+<https://www.wikidata.org/wiki/Q239> a rico:Place;
+    rdfs:label "Bruxelas"@pt;
+    rico:hasOrHadCoordinates geonames:2800866;
+    rico:isOrWasLocationOf <http://viaf.org/viaf/130746794> .
+
+<ex:E04_C/010-001_012> a rico:Record;
+    rdfs:label "Carta da Académie Royale des Sciences et Belles-Lettres de Bruxelles a Nuno Barbosa de Figueiredo, enviado extraordinário da rainha D. Maria II aos Países-Baixos."@pt;
+    rico:hasOrHadName "Carta da Académie Royale des Sciences et Belles-Lettres de Bruxelles a Nuno Barbosa de Figueiredo, enviado extraordinário da rainha D. Maria II aos Países-Baixos."@pt;
+    rico:hasCreationDate "1824-06-10"^^xsd:date;
+    rico:hasDocumentaryFormType "Correspondência"@pt;
+    rico:hasOrHadLanguage "Espanhol"@pt;
+    rico:RecordState "Original"@pt;
+    rico:recordResourceToInstantiationRelationHasTarget <ex:E06_C/010-001_012>;
+    rico:hasSender <http://viaf.org/viaf/79014351>;
+    rico:hasReceiver <ex:E08_Figueiredo,NunoBarbosade>;
+    rico:hasReceiver <http://viaf.org/viaf/76306730>;
+    rico:ActivityDocumentationRelation <ex:E15_C/010-001_001>;
+    rico:hasorHadHolder <http://viaf.org/viaf/131912229>;
+    rico:scopeAndContent "Reporta e confirma a receção de publicações, especificando que o envio de três volumes das 'Memórias', foram diretamente expedidas pelo enviado da rainha D. Maria II, Nuno Barbosa de Figueiredo."@pt;
+    rico:authenticityNote "Contém assinaturas."@pt;
+    rico:isAssociatedWithPlace <https://www.wikidata.org/wiki/Q239> .
+
+<ex:E06_C/010-001_012> a rico:Instantiation;
+    rdfs:label "Instanciação - Carta da Académie Royale des Sciences et Belles-Lettres de Bruxelles a Nuno Barbosa de Figueiredo, enviado extraordinário da rainha D. Maria II aos Países-Baixos."@pt;
+    rico:hasOrHadName  "Instanciação - Carta da Académie Royale des Sciences et Belles-Lettres de Bruxelles a Nuno Barbosa de Figueiredo, enviado extraordinário da rainha D. Maria II aos Países-Baixos."@pt;
+    rico:hasorHadHolder <http://viaf.org/viaf/131912229>;
+    rico:creationDate "1824-06-10"^^xsd:date;
+    rico:CarrierExtent "1 f."@pt;
+    rico:CarrierType "Papel"@pt;
+    rico:productionTechnique "Manuscrito"@pt;
+    rico:physicalCharacteristicsNote "Contém elemento iconográfico da entidade correspondente."@pt .
+
+<http://viaf.org/viaf/131912229> rdfs:label "\"Academia das Ciências de Lisboa\""@pt .
+
+<ex:E08_Figueiredo,NunoBarbosade> rdf:type rico:Person;
+    rdfs:label "Figueiredo, Nuno Barbosa de";
+    rico:hasOrHadName "Figueiredo, Nuno Barbosa de";
+    rico:hasOrHadOccupationOfType <https://www.wikidata.org/wiki/Q193391> .
+
+<https://www.wikidata.org/wiki/Q193391> rdfs:label "\"Diplomata\""@pt .
+
+<http://viaf.org/viaf/76306730> rdf:type rico:Person;
+    rdfs:label "Pereira, José Maria Dantas";
+    rico:hasOrHadName "Pereira, José Maria Dantas";
+    rico:isOrWasMemberOf <http://viaf.org/viaf/131912229>;
+    rico:hasOrHadIdentifier "PT/ACL/ACL/C/001/1791/JMDP"^^xsd:localID;
+    rico:hasOrHadOccupationOfType <https://www.wikidata.org/wiki/Q6501749>;
+    rico:performsOrPerformed <ex:E15_C/010-001_001>;
+    rico:isSuccessorOf <http://viaf.org/viaf/2059225>;
+    rico:hasSuccessor <http://viaf.org/viaf/30292606>;
+    rico:generalDescription: "José Maria Dantas Pereira (1772-1836) exerceu o cargo de Secretário da ACL, entre 1823 e 1834."@pt .
+
+<http://viaf.org/viaf/2059225> rdfs:label "\"Trigoso, Sebastião Francisco de Mendo\"" .
+<http://viaf.org/viaf/30292606> rdfs:label "\"Macedo, Joaquim José da Costa de\"" .
+
+<http://viaf.org/viaf/79014351> a rico:Person;
+    rdfs:label "Dewez, Louis Dieudonné Joseph";
+    rico:hasOrHadName "Dewez, Louis Dieudonné Joseph";
+    rico:isOrWasMemberOf <http://viaf.org/viaf/130746794>;
+    rico:hasOrHadOccupationOfType <https://www.wikidata.org/wiki/Q6501749>;
+    rico:performsOrPerformed <ex:E15_C/010-001_001> .
+
+<https://www.wikidata.org/wiki/Q6501749> rdfs:label "\"Secretário-geral\""@pt .
+<ex:E15_C/010-001_001> rdfs:label "\"Permuta bibliográfica\""@pt .

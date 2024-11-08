@@ -1,0 +1,115 @@
+@base <http://example.com/base/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix ricdft: <https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#> .
+@prefix ricrst: <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+
+<ex:E03_C/010-001_F> a rico:RecordSet;
+    rdfs:label "Fundo do Arquivo da Academia das Cências de Lisboa"@pt;
+    rico:hasRecordSetType ricrst:Fonds;
+    rico:hasOrHadIdentifier "PT/ACL/ACL"^^xsd:localID;
+    rico:hasOrHadName "Fundo do Arquivo da Academia das Cências de Lisboa"@pt;
+    rico:scopeAndContent "O Fundo da Academia das Ciências de Lisboa conserva documentação de natureza histórica, testemunha dos fluxos informacionais intrínsecos à sua orgânica institucional e estrutura interna."@pt;
+    rico:hasOrHadHolder <http://viaf.org/viaf/131912229>;
+    rico:hasBeginningDate "1780"^^xsd:date;
+    rico:hasEndDate "1978"^^xsd:date;
+    rico:includesOrIncluded <ex:E03_C/010-001> .
+
+<ex:E03_C/010-001> a rico:RecordSet;
+    rdfs:label "Correspondência entre Corpos Científicos"@pt;
+    rico:hasRecordSetType ricrst:Series;
+    rico:hasOrHadIdentifier "PT/ACL/ACL/C/010-001"^^xsd:localID;
+    rico:hasOrHadName "Correspondência entre Corpos Científicos"@pt;
+    rico:scopeAndContent "Série documental que integra a correspondência recebida de organizações congéneres estrangeiras."@pt;
+    rico:hasOrHadHolder <http://viaf.org/viaf/131912229>;
+    rico:hasBeginningDate "1802"^^xsd:date;
+    rico:hasEndDate "1978"^^xsd:date;
+    rico:RecordResourceExtent "[250] cartas"@pt;
+    rico:conditionsOfAccess "Acesso Condicionado"@pt .
+
+<http://viaf.org/viaf/131912229> a rico:CorporateBody;
+    rdfs:label "Academia das Ciências de Lisboa"@pt;
+    rico:hasOrHadName "Academia das Ciências de Lisboa"@pt;
+    rico:date "1780"^^xsd:date;
+    rico:hasOrHadCorporateBodyType <https://www.wikidata.org/wiki/Q955824>;
+    rico:isAssociatedWithPlace <https://www.wikidata.org/wiki/Q597> .
+
+<ex:E11_SociedadeBahiensedosHomensdeLetras> a rico:CorporateBody;
+    rdfs:label "Sociedade Bahiense dos Homens de Letras"@pt;
+    rico:hasOrHadName "Sociedade Bahiense dos Homens de Letras"@pt;
+    rico:date "1810"^^xsd:date;
+    rico:hasOrHadCorporateBodyType <https://www.wikidata.org/wiki/Q955824>;
+    rico:isAssociatedWithPlace <https://www.wikidata.org/wiki/Q36947> .
+
+<https://www.wikidata.org/wiki/Q955824> rdfs:label "\"Sociedade científica\""@pt .
+
+<ex:E15_C/010-001_002> a rico:Activity;
+    rico:activityType "Requerimento"@pt;
+    rdfs:label "Requerimento"@pt .
+
+<https://www.wikidata.org/wiki/Q597> a rico:Place;
+    rdfs:label "Lisboa"@pt;
+    rico:hasOrHadCoordinates geonames:2267057;
+    rico:isOrWasLocationOf <http://viaf.org/viaf/138109643> .
+
+<https://www.wikidata.org/wiki/Q36947> a rico:Place;
+    rdfs:label "Salvador"@pt;
+    rico:hasOrHadCoordinates geonames:3450554;
+    rico:isOrWasLocationOf <ex:E11_SociedadeBahiensedosHomensdeLetras> .
+
+<ex:E04_C/010-001_010> a rico:Record;
+    rdfs:label "Carta da Sociedade Bahiense dos Homens de Letras a João Guilherme Cristiano Müller, Secretário."@pt;
+    rico:hasOrHadName "Carta da Sociedade Bahiense dos Homens de Letras a João Guilherme Cristiano Müller, Secretário, sobre a representação preliminar dos estatutos e respetiva revisão."@pt;
+    rico:hasCreationDate "1810-09-24"^^xsd:date;
+    rico:hasDocumentaryFormType "Correspondência"@pt;
+    rico:hasOrHadLanguage "Português"@pt;
+    rico:RecordState "Original"@pt;
+    rico:recordResourceToInstantiationRelationHasTarget <ex:E06_C/010-001_010>;
+    rico:hasSender <http://viaf.org/viaf/17068252>;
+    rico:hasReceiver <http://viaf.org/viaf/2427972>;
+    rico:ActivityDocumentationRelation <ex:E15_C/010-001_002>;
+    rico:hasorHadHolder <http://viaf.org/viaf/131912229>;
+    rico:scopeAndContent "Reporta-se ao envio da versão preliminar dos estatutos da recém-criada corporação, que foram lidos em sessão ordinária da Academia das Ciências de Lisboa, e respetiva apreciação desenvolvida pelos sócios da mesma."@pt;
+    rico:authenticityNote "Contém assinaturas."@pt;
+    rico:isAssociatedWithPlace <https://www.wikidata.org/wiki/Q36947> .
+
+<ex:E06_C/010-001_010> a rico:Instantiation;
+    rdfs:label "Instanciação - Carta da Sociedade Bahiense dos Homens de Letras a João Guilherme Cristiano Müller, Secretário, sobre a representação preliminar dos estatutos e respetiva revisão."@pt;
+    rico:hasOrHadName "Instanciação - Carta da Sociedade Bahiense dos Homens de Letras a João Guilherme Cristiano Müller, Secretário, sobre a representação preliminar dos estatutos e respetiva revisão."@pt;
+    rico:hasorHadHolder <http://viaf.org/viaf/131912229>;
+    rico:hasCreationDate "1810-09-24"^^xsd:date;
+    rico:CarrierExtent "22 f."@pt;
+    rico:CarrierType "Papel"@pt;
+    rico:productionTechnique "Manuscrito"@pt .
+
+<http://viaf.org/viaf/131912229> rdfs:label "\"Academia das Ciências de Lisboa\""@pt .
+
+<http://viaf.org/viaf/2427972> rdf:type rico:Person;
+    rdfs:label	"Müller, João Guilherme Christiano";
+    rico:hasOrHadName "Müller, João Guilherme Christiano";
+    rico:hasOrHadName "Johann Wilhelm Christian Müller";
+    rico:isOrWasMemberOf <http://viaf.org/viaf/131912229>;
+    rico:hasOrHadIdentifier "PT/ACL/ACL/C/001/1787-10-24/JWCM"^^xsd:localID;
+    rico:hasOrHadOccupationOfType <https://www.wikidata.org/wiki/Q6501749>;
+    rico:performsOrPerformed <ex:E15_C/010-001_002>;
+    rico:isSuccessorOf <https://www.wikidata.org/wiki/Q5484111>;
+    rico:hasSuccessor <http://viaf.org/viaf/22160159>;
+    rico:generalDescription "João Guilherme Christiano Müller (1752-1814) exerceu o cargo de Secretário da ACL, entre 1809 e 1811."@pt .
+
+<https://www.wikidata.org/wiki/Q5484111> rdfs:label "\"Stockler, Francisco de Borja Garção\"" .
+<http://viaf.org/viaf/22160159> rdfs:label "\"Silva, José Bonifácio de Andrada e\"" .
+
+<http://viaf.org/viaf/17068252> a rico:Person;
+    rdfs:label "Mendes, Luís António de Oliveira";
+    rico:hasOrHadName "Mendes, Luís António de Oliveira";
+    rico:isOrWasMemberOf <ex:E11_SociedadeBahiensedosHomensdeLetras>;
+    rico:hasOrHadOccupationOfType <https://www.wikidata.org/wiki/Q6501749>;
+    rico:performsOrPerformed <ex:E15_C/010-001_002> .
+
+<https://www.wikidata.org/wiki/Q6501749> rdfs:label "\"Secretário-geral\""@pt .
+<ex:E15_C/010-001_002> rdfs:label "\"Requerimento\""@pt .

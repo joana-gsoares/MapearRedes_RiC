@@ -1,0 +1,110 @@
+@base <http://example.com/base/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix ricdft: <https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#> .
+@prefix ricrst: <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+
+<ex:E03_C/010-001_F> a rico:RecordSet;
+    rdfs:label "Fundo do Arquivo da Academia das Cências de Lisboa"@pt;
+    rico:hasRecordSetType ricrst:Fonds;
+    rico:hasOrHadIdentifier "PT/ACL/ACL"^^xsd:localID;
+    rico:hasOrHadName "Fundo do Arquivo da Academia das Cências de Lisboa"@pt;
+    rico:scopeAndContent "O Fundo da Academia das Ciências de Lisboa conserva documentação de natureza histórica, testemunha dos fluxos informacionais intrínsecos à sua orgânica institucional e estrutura interna."@pt;
+    rico:hasOrHadHolder <http://viaf.org/viaf/131912229>;
+    rico:hasBeginningDate "1780"^^xsd:date;
+    rico:hasEndDate "1978"^^xsd:date;
+    rico:includesOrIncluded <ex:E03_C/010-001> .
+
+<ex:E03_C/010-001> a rico:RecordSet;
+    rdfs:label "Correspondência entre Corpos Científicos"@pt;
+    rico:hasRecordSetType ricrst:Series;
+    rico:hasOrHadIdentifier "PT/ACL/ACL/C/010-001"^^xsd:localID;
+    rico:hasOrHadName "Correspondência entre Corpos Científicos"@pt;
+    rico:scopeAndContent "Série documental que integra a correspondência recebida de organizações congéneres estrangeiras."@pt;
+    rico:hasOrHadHolder <http://viaf.org/viaf/131912229>;
+    rico:hasBeginningDate "1802"^^xsd:date;
+    rico:hasEndDate "1978"^^xsd:date;
+    rico:RecordResourceExtent "[250] cartas"@pt;
+    rico:conditionsOfAccess "Acesso Condicionado"@pt .
+
+<http://viaf.org/viaf/131912229> a rico:CorporateBody;
+    rdfs:label "Academia das Ciências de Lisboa"@pt;
+    rico:hasOrHadName "Academia das Ciências de Lisboa"@pt;
+    rico:date "1780"^^xsd:date;
+    rico:hasOrHadCorporateBodyType <https://www.wikidata.org/wiki/Q955824>;
+    rico:isAssociatedWithPlace <https://www.wikidata.org/wiki/Q597> .
+
+<http://viaf.org/viaf/147168599> a rico:CorporateBody;
+    rdfs:label "American Philosophical Society"@en;
+    rico:hasOrHadName "American Philosophical Society"@en;
+    rico:date "1743"^^xsd:date;
+    rico:hasOrHadCorporateBodyType <https://www.wikidata.org/wiki/Q955824>;
+    rico:isAssociatedWithPlace <https://www.wikidata.org/wiki/Q1345> .
+
+<https://www.wikidata.org/wiki/Q955824> rdfs:label "\"Sociedade científica\""@pt .
+
+<ex:E15_C/010-001_001> a rico:Activity;
+    rdfs:label "Permuta bibliográfica"@pt;
+    rico:activityType "Permuta bibliográfica"@pt .
+
+<https://www.wikidata.org/wiki/Q597> a rico:Place;
+    rdfs:label "Lisboa"@pt;
+    rico:hasOrHadCoordinates geonames:2267057;
+    rico:isOrWasLocationOf <http://viaf.org/viaf/138109643> .
+
+<https://www.wikidata.org/wiki/Q1345> a rico:Place;
+    rdfs:label "Filadélfia"@pt;
+    rico:hasOrHadCoordinates geonames:4560349;
+    rico:isOrWasLocationOf <http://viaf.org/viaf/147168599> .
+
+<ex:E04_C/010-001_008> a rico:Record;
+    rdfs:label "Carta da American Philosphical Society a Cipriano Ribeiro Freire, académico."@pt;
+    rico:hasOrHadName "Carta da American Philosphical Society a Cipriano Ribeiro Freire, académico."@pt;
+    rico:hasCreationDate "1807-04-03"^^xsd:date;
+    rico:hasDocumentaryFormType "Correspondência"@pt;
+    rico:hasOrHadLanguage "Inglês"@pt;
+    rico:RecordState "Original"@pt;
+    rico:recordResourceToInstantiationRelationHasTarget <ex:E06_C/010-001_008>;
+    rico:hasSender <http://viaf.org/viaf/21178800>;
+    rico:hasReceiver <http://viaf.org/viaf/98558032>;
+    rico:ActivityDocumentationRelation <ex:E15_C/010-001_001>;
+    rico:hasorHadHolder <http://viaf.org/viaf/131912229>;
+    rico:scopeAndContent "Reporta e confirma a receção de publicações."@pt;
+    rico:authenticityNote "Contém assinatura."@pt;
+    rico:isAssociatedWithPlace <https://www.wikidata.org/wiki/Q1345> .
+
+<ex:E06_C/010-001_008> a rico:Instantiation;
+    rdfs:label "Instanciação - Carta da American Philosphical Society a Cipriano Ribeiro Freire, académico."@pt;
+    rico:hasOrHadName "Instanciação - Carta da American Philosphical Society a Cipriano Ribeiro Freire, académico."@pt;
+    rico:hasorHadHolder <http://viaf.org/viaf/131912229>;
+    rico:creationDate "1807-04-03"^^xsd:date;
+    rico:CarrierExtent "1 f."@pt;
+    rico:CarrierType "Papel"@pt;
+    rico:productionTechnique "Manuscrito"@pt .
+
+<http://viaf.org/viaf/131912229> rdfs:label "\"Academia das Ciências de Lisboa\""@pt .
+
+<http://viaf.org/viaf/98558032> rdf:type rico:Person;
+    rdfs:label "Freire, Cipriano Ribeiro";
+    rico:hasOrHadName "Freire, Cipriano Ribeiro";
+    rico:isOrWasMemberOf <http://viaf.org/viaf/131912229>;
+    rico:hasOrHadIdentifier "PT/ACL/ACL/C/001/1789-08-02/CRF"^^xsd:localID;
+    rico:hasOrHadOccupationOfType <https://www.wikidata.org/wiki/Q3400985>;
+    rico:performsOrPerformed <ex:E15_C/010-001_001>;
+    rico:generalDescription "Cipriano Ribeiro Freire foi eleito sócio correspondente, em 1789, passando à categoria de sócio livre, em 1806."@pt .
+
+<http://viaf.org/viaf/21178800> a rico:Person;
+    rdfs:label "James, Thomas Chalkley";
+    rico:hasOrHadName "James, Thomas Chalkley";
+    rico:isOrWasMemberOf <http://viaf.org/viaf/147168599>;
+    rico:hasOrHadOccupationOfType <https://www.wikidata.org/wiki/Q182436>;
+    rico:performsOrPerformed <ex:E15_C/010-001_001> .
+
+<https://www.wikidata.org/wiki/Q182436> rdfs:label "\"Bibliotecário\""@pt .
+<https://www.wikidata.org/wiki/Q3400985> rdfs:label "\"Académico\""@pt .
+<ex:E15_C/010-001_001> rdfs:label "\"Permuta bibliográfica\""@pt .

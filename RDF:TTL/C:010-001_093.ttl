@@ -1,0 +1,119 @@
+@base <http://example.com/base/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix ricdft: <https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#> .
+@prefix ricrst: <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+
+<ex:E03_C/010-001_F> a rico:RecordSet;
+    rdfs:label "Fundo do Arquivo da Academia das Cências de Lisboa"@pt;
+    rico:hasRecordSetType ricrst:Fonds;
+    rico:hasOrHadIdentifier "PT/ACL/ACL"^^xsd:localID;
+    rico:hasOrHadName "Fundo do Arquivo da Academia das Cências de Lisboa"@pt;
+    rico:scopeAndContent "O Fundo da Academia das Ciências de Lisboa conserva documentação de natureza histórica, testemunha dos fluxos informacionais intrínsecos à sua orgânica institucional e estrutura interna."@pt;
+    rico:hasOrHadHolder <http://viaf.org/viaf/131912229>;
+    rico:hasBeginningDate "1780"^^xsd:date;
+    rico:hasEndDate "1978"^^xsd:date;
+    rico:includesOrIncluded <ex:E03_C/010-001> .
+
+<ex:E03_C/010-001> a rico:RecordSet;
+    rdfs:label "Correspondência entre Corpos Científicos"@pt;
+    rico:hasRecordSetType ricrst:Series;
+    rico:hasOrHadIdentifier "PT/ACL/ACL/C/010-001"^^xsd:localID;
+    rico:hasOrHadName "Correspondência entre Corpos Científicos"@pt;
+    rico:scopeAndContent "Série documental que integra a correspondência recebida de organizações congéneres estrangeiras."@pt;
+    rico:hasOrHadHolder <http://viaf.org/viaf/131912229>;
+    rico:hasBeginningDate "1802"^^xsd:date;
+    rico:hasEndDate "1978"^^xsd:date;
+    rico:RecordResourceExtent "[250] cartas"@pt;
+    rico:conditionsOfAccess "Acesso Condicionado"@pt .
+
+<http://viaf.org/viaf/131912229> a rico:CorporateBody;
+    rdfs:label "Academia das Ciências de Lisboa"@pt;
+    rico:hasOrHadName "Academia das Ciências de Lisboa"@pt;
+    rico:date "1780"^^xsd:date;
+    rico:hasOrHadCorporateBodyType <https://www.wikidata.org/wiki/Q955824>;
+    rico:isAssociatedWithPlace <https://www.wikidata.org/wiki/Q597> .
+
+<http://viaf.org/viaf/144325264> a rico:CorporateBody;
+    rdfs:label "Société du Musée de la Transylvanie"@fr;
+    rico:hasOrHadName "Société du Musée de la Transylvanie"@fr;
+    rico:hasOrHadName "Musée National d’Histoire de la Transylvanie"@fr;
+    rico:hasOrHadName "Erdélyi Múzeum-Egyesület"@ra;
+    rico:date "1859"^^xsd:date;
+    rico:hasOrHadCorporateBodyType <https://www.wikidata.org/wiki/Q955824>;
+    rico:isAssociatedWithPlace <https://www.wikidata.org/wiki/Q100188> .
+
+<https://www.wikidata.org/wiki/Q955824> rdfs:label "\"Sociedade científica\""@pt .
+
+<ex:E15_C/010-001_001> a rico:Activity;
+    rdfs:label "Permuta bibliográfica"@pt;
+    rico:activityType "Permuta bibliográfica"@pt .
+
+<https://www.wikidata.org/wiki/Q597> a rico:Place;
+    rdfs:label "Lisboa"@pt;
+    rico:hasOrHadCoordinates geonames:2267057;
+    rico:isOrWasLocationOf <http://viaf.org/viaf/138109643> .
+
+<https://www.wikidata.org/wiki/Q100188> a rico:Place;
+    rdfs:label "Cluj-Napoca"@pt;
+    rico:hasOrHadCoordinates geonames:681290;
+    rico:isOrWasLocationOf <http://viaf.org/viaf/144325264> .
+
+<ex:E04_C/010-001_093> a rico:Record;
+    rdfs:label "Carta da Société du Musée de la Transylvanie a Manuel Joaquim Pinheiro Chagas, Secretário."@pt;
+    rico:hasOrHadName "Carta da Société du Musée de la Transylvanie a Manuel Joaquim Pinheiro Chagas, Secretário."@pt;
+    rico:hasCreationDate "1891-07-25"^^xsd:date;
+    rico:hasDocumentaryFormType "Correspondência"@pt;
+    rico:hasOrHadLanguage "Francês"@pt;
+    rico:RecordState "Original"@pt;
+    rico:recordResourceToInstantiationRelationHasTarget <ex:E06_C/010-001_093>;
+    rico:hasSender <http://viaf.org/viaf/71379863>;
+    rico:hasReceiver <http://viaf.org/viaf/12303053>;
+    rico:ActivityDocumentationRelation <ex:E15_C/010-001_001>;
+    rico:hasorHadHolder <http://viaf.org/viaf/131912229>;
+    rico:authenticityNote "Contém assinatura."@pt;
+    rico:isAssociatedWithPlace <https://www.wikidata.org/wiki/Q100188>;
+    rico:scopeAndContent "Reporta-se ao envio de publicações."@pt .
+
+<ex:E06_C/010-001_093> a rico:Instantiation;
+    rdfs:label "Instanciação - Carta da Société du Musée de la Transylvanie a Manuel Joaquim Pinheiro Chagas, Secretário."@pt;
+    rico:hasOrHadName  "Instanciação - Carta da Société du Musée de la Transylvanie a Manuel Joaquim Pinheiro Chagas, Secretário."@pt;
+    rico:hasorHadHolder <http://viaf.org/viaf/131912229>;
+    rico:creationDate "1891-07-25"^^xsd:date;
+    rico:CarrierExtent "1 f."@pt;
+    rico:CarrierType "Papel"@pt;
+    rico:productionTechnique "Manuscrito"@pt;
+    rico:productionTechnique "Impresso"@pt;
+    rico:physicalCharacteristicsNote "Contém elemento iconográfico da entidade correspondente."@pt .
+
+<http://viaf.org/viaf/131912229> rdfs:label "\"Academia das Ciências de Lisboa\""@pt .
+
+<http://viaf.org/viaf/12303053> rdf:type rico:Person;
+    rdfs:label "Chagas, Manuel Joaquim Pinheiro";
+    rico:hasOrHadName "Chagas, Manuel Joaquim Pinheiro";
+    rico:isOrWasMemberOf <http://viaf.org/viaf/131912229>;
+    rico:hasOrHadIdentifier "PT/ACL/ACL/C/001/1866-01-18/MJPC"^^xsd:localID;
+    rico:hasOrHadOccupationOfType <https://www.wikidata.org/wiki/Q6501749>;
+    rico:performsOrPerformed <ex:E15_C/010-001_001>;
+    rico:isSuccessorOf <http://viaf.org/viaf/19966621>;
+    rico:hasSuccessor <http://viaf.org/viaf/18044891>;
+    rico:generalDescription: "Manuel Joaquim Pinheiro Chagas (1842-1895) exerceu o cargo de Secretário da ACL, entre 1891 e 1898."@pt .
+
+<http://viaf.org/viaf/19966621> rdfs:label "\"Coelho, José Maria Latino Coelho\"" .
+<http://viaf.org/viaf/18044891> rdfs:label "\"Moniz, Jaime Constantino de Freitas\"" .
+
+<http://viaf.org/viaf/71379863> a rico:Person;
+    rdfs:label "Koch, Antal";
+    rico:hasOrHadName "Koch, Antal";
+    rico:isOrWasMemberOf <http://viaf.org/viaf/144325264>;
+    rico:hasOrHadOccupationOfType <https://www.wikidata.org/wiki/Q319544>;
+    rico:performsOrPerformed <ex:E15_C/010-001_001> .
+
+<https://www.wikidata.org/wiki/Q6501749> rdfs:label "\"Secretário-geral\""@pt .
+<https://www.wikidata.org/wiki/Q319544> rdfs:label "\"Secretário\""@pt .
+<ex:E15_C/010-001_001> rdfs:label "\"Permuta bibliográfica\""@pt .

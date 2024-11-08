@@ -1,0 +1,120 @@
+@base <http://example.com/base/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix ricdft: <https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#> .
+@prefix ricrst: <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+
+<ex:E03_C/010-001_F> a rico:RecordSet;
+    rdfs:label "Fundo do Arquivo da Academia das Cências de Lisboa"@pt;
+    rico:hasRecordSetType ricrst:Fonds;
+    rico:hasOrHadIdentifier "PT/ACL/ACL"^^xsd:localID;
+    rico:hasOrHadName "Fundo do Arquivo da Academia das Cências de Lisboa"@pt;
+    rico:scopeAndContent "O Fundo da Academia das Ciências de Lisboa conserva documentação de natureza histórica, testemunha dos fluxos informacionais intrínsecos à sua orgânica institucional e estrutura interna."@pt;
+    rico:hasOrHadHolder <http://viaf.org/viaf/131912229>;
+    rico:hasBeginningDate "1780"^^xsd:date;
+    rico:hasEndDate "1978"^^xsd:date;
+    rico:includesOrIncluded <ex:E03_C/010-001> .
+
+<ex:E03_C/010-001> a rico:RecordSet;
+    rdfs:label "Correspondência entre Corpos Científicos"@pt;
+    rico:hasRecordSetType ricrst:Series;
+    rico:hasOrHadIdentifier "PT/ACL/ACL/C/010-001"^^xsd:localID;
+    rico:hasOrHadName "Correspondência entre Corpos Científicos"@pt;
+    rico:scopeAndContent "Série documental que integra a correspondência recebida de organizações congéneres estrangeiras."@pt;
+    rico:hasOrHadHolder <http://viaf.org/viaf/131912229>;
+    rico:hasBeginningDate "1802"^^xsd:date;
+    rico:hasEndDate "1978"^^xsd:date;
+    rico:RecordResourceExtent "[250] cartas"@pt;
+    rico:conditionsOfAccess "Acesso Condicionado"@pt .
+
+<http://viaf.org/viaf/131912229> a rico:CorporateBody;
+    rdfs:label "Academia das Ciências de Lisboa"@pt;
+    rico:hasOrHadName "Academia das Ciências de Lisboa"@pt;
+    rico:date "1780"^^xsd:date;
+    rico:hasOrHadCorporateBodyType <https://www.wikidata.org/wiki/Q955824>;
+    rico:isAssociatedWithPlace <https://www.wikidata.org/wiki/Q597> .
+
+<http://viaf.org/viaf/127696567> a rico:CorporateBody;
+    rdfs:label "Royal Prussian Academy of Sciences"@en;
+    rico:hasOrHadName "Royal Prussian Academy of Sciences"@en;
+    rico:hasOrHadName "Académie Royale de Prusse des Sciences & Belles-Lettres"@fr;
+    rico:hasOrHadName "Académie Royale des Sciences de Berlin"@fr;
+    rico:hasOrHadName "Preußische Akademie der Wissenschaften"@de;
+    rico:hasOrHadName "Regia Scientiarum Academia Borussica"@la;
+    rico:hasOrHadName "Regia Scientiarum Academia Berolinensis"@la;
+    rico:hasOrHadName "Die Königliche Akademie der Wissenchaften zu Berlin"@de;
+    rico:date "1700"^^xsd:date;
+    rico:hasOrHadCorporateBodyType <https://www.wikidata.org/wiki/Q955824>;
+    rico:isAssociatedWithPlace <https://www.wikidata.org/wiki/Q64> .
+
+<https://www.wikidata.org/wiki/Q955824> rdfs:label "\"Sociedade científica\""@pt .
+
+<ex:E15_C/010-001_001> a rico:Activity;
+    rdfs:label "Permuta bibliográfica"@pt;
+    rico:activityType "Permuta bibliográfica"@pt .
+
+<https://www.wikidata.org/wiki/Q597> a rico:Place;
+    rdfs:label "Lisboa"@pt;
+    rico:hasOrHadCoordinates geonames:2267057;
+    rico:isOrWasLocationOf <http://viaf.org/viaf/138109643> .
+
+<https://www.wikidata.org/wiki/Q64> a rico:Place;
+    rdfs:label "Berlim"@pt;
+    rico:hasOrHadCoordinates geonames:2950159;
+    rico:isOrWasLocationOf <http://viaf.org/viaf/127696567> .
+
+<ex:E04_C/010-001_022> a rico:Record;
+    rdfs:label "Carta da Regia Scientiarum Academia Berolinensis a José Maria Dantas Pereira, Secretário."@pt;
+    rico:hasOrHadName "Carta da Regia Scientiarum Academia Berolinensis a José Maria Dantas Pereira, Secretário."@pt;
+    rico:hasCreationDate "1829-03-01"^^xsd:date;
+    rico:hasDocumentaryFormType "Correspondência"@pt;
+    rico:hasOrHadLanguage "Latim"@pt;
+    rico:RecordState "Original"@pt;
+    rico:recordResourceToInstantiationRelationHasTarget <ex:E06_C/010-001_022>;
+    rico:hasSender <http://viaf.org/viaf/264334242>;
+    rico:hasReceiver <http://viaf.org/viaf/76306730>;
+    rico:ActivityDocumentationRelation <ex:E15_C/010-001_001>;
+    rico:hasorHadHolder <http://viaf.org/viaf/131912229>;
+    rico:authenticityNote "Contém assinatura."@pt;
+    rico:isAssociatedWithPlace <https://www.wikidata.org/wiki/Q64> .
+    
+<ex:E06_C/010-001_022> a rico:Instantiation;
+    rdfs:label "Instanciação - Carta da Regia Scientiarum Academia Berolinensis a José Maria Dantas Pereira, Secretário."@pt;
+    rico:hasOrHadName  "Instanciação - Carta da Regia Scientiarum Academia Berolinensis a José Maria Dantas Pereira, Secretário."@pt;
+    rico:hasorHadHolder <http://viaf.org/viaf/131912229>;
+    rico:creationDate "1829-03-01"^^xsd:date;
+    rico:CarrierExtent "1 f."@pt;
+    rico:CarrierType "Papel"@pt;
+    rico:productionTechnique "Manuscrito"@pt;
+    rico:productionTechnique "Impresso"@pt .
+
+<http://viaf.org/viaf/131912229> rdfs:label "\"Academia das Ciências de Lisboa\""@pt .
+
+<http://viaf.org/viaf/76306730> rdf:type rico:Person;
+    rdfs:label "Pereira, José Maria Dantas";
+    rico:hasOrHadName "Pereira, José Maria Dantas";
+    rico:isOrWasMemberOf <http://viaf.org/viaf/131912229>;
+    rico:hasOrHadIdentifier "PT/ACL/ACL/C/001/1791/JMDP"^^xsd:localID;
+    rico:hasOrHadOccupationOfType <https://www.wikidata.org/wiki/Q6501749>;
+    rico:performsOrPerformed <ex:E15_C/010-001_001>;
+    rico:isSuccessorOf <http://viaf.org/viaf/73905573>;
+    rico:hasSuccessor <http://viaf.org/viaf/30292606>;
+    rico:generalDescription: "José Maria Dantas Pereira (1772-1836) exerceu o cargo de Secretário da ACL, entre 1823 e 1834."@pt .
+
+<http://viaf.org/viaf/2059225> rdfs:label "\"Trigoso, Sebastião Francisco de Mendo\"" .
+<http://viaf.org/viaf/30292606> rdfs:label "\"Macedo, Joaquim José da Costa de\"" .
+
+<http://viaf.org/viaf/264334242> a rico:Person;
+    rdfs:label "Erman, Paul";
+    rico:hasOrHadName "Erman, Paul";
+    rico:isOrWasMemberOf <http://viaf.org/viaf/127696567>;
+    rico:hasOrHadOccupationOfType <https://www.wikidata.org/wiki/Q5128003>;
+    rico:performsOrPerformed <ex:E15_C/010-001_001> .
+
+<https://www.wikidata.org/wiki/Q5128003> rdfs:label "\"Secretário da classe\""@pt .
+<ex:E15_C/010-001_001> rdfs:label "\"Permuta bibliográfica\""@pt .

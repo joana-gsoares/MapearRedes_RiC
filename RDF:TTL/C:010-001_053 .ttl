@@ -1,0 +1,123 @@
+@base <http://example.com/base/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix ricdft: <https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#> .
+@prefix ricrst: <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+
+<ex:E03_C/010-001_F> a rico:RecordSet;
+    rdfs:label "Fundo do Arquivo da Academia das Cências de Lisboa"@pt;
+    rico:hasRecordSetType ricrst:Fonds;
+    rico:hasOrHadIdentifier "PT/ACL/ACL"^^xsd:localID;
+    rico:hasOrHadName "Fundo do Arquivo da Academia das Cências de Lisboa"@pt;
+    rico:scopeAndContent "O Fundo da Academia das Ciências de Lisboa conserva documentação de natureza histórica, testemunha dos fluxos informacionais intrínsecos à sua orgânica institucional e estrutura interna."@pt;
+    rico:hasOrHadHolder <http://viaf.org/viaf/131912229>;
+    rico:hasBeginningDate "1780"^^xsd:date;
+    rico:hasEndDate "1978"^^xsd:date;
+    rico:includesOrIncluded <ex:E03_C/010-001> .
+
+<ex:E03_C/010-001> a rico:RecordSet;
+    rdfs:label "Correspondência entre Corpos Científicos"@pt;
+    rico:hasRecordSetType ricrst:Series;
+    rico:hasOrHadIdentifier "PT/ACL/ACL/C/010-001"^^xsd:localID;
+    rico:hasOrHadName "Correspondência entre Corpos Científicos"@pt;
+    rico:scopeAndContent "Série documental que integra a correspondência recebida de organizações congéneres estrangeiras."@pt;
+    rico:hasOrHadHolder <http://viaf.org/viaf/131912229>;
+    rico:hasBeginningDate "1802"^^xsd:date;
+    rico:hasEndDate "1978"^^xsd:date;
+    rico:RecordResourceExtent "[250] cartas"@pt;
+    rico:conditionsOfAccess "Acesso Condicionado"@pt .
+
+<http://viaf.org/viaf/131912229> a rico:CorporateBody;
+    rdfs:label "Academia das Ciências de Lisboa"@pt;
+    rico:hasOrHadName "Academia das Ciências de Lisboa"@pt;
+    rico:date "1780"^^xsd:date;
+    rico:hasOrHadCorporateBodyType <https://www.wikidata.org/wiki/Q955824>;
+    rico:isAssociatedWithPlace <https://www.wikidata.org/wiki/Q597> .
+
+<http://viaf.org/viaf/159805885> a rico:CorporateBody;
+    rdfs:label "Smithsonian Institution"@en;
+    rico:hasOrHadName "Smithsonian Institution"@en;
+    rico:date "1846"^^xsd:date;
+    rico:hasOrHadCorporateBodyType <https://www.wikidata.org/wiki/Q955824>;
+    rico:isAssociatedWithPlace <https://www.wikidata.org/wiki/Q61> .
+
+<https://www.wikidata.org/wiki/Q955824> rdfs:label "\"Sociedade científica\""@pt .
+
+<ex:E15_C/010-001_001> a rico:Activity;
+    rdfs:label "Permuta bibliográfica"@pt;
+    rico:activityType "Permuta bibliográfica"@pt .
+
+<https://www.wikidata.org/wiki/Q597> a rico:Place;
+    rdfs:label "Lisboa"@pt;
+    rico:hasOrHadCoordinates geonames:2267057;
+    rico:isOrWasLocationOf <http://viaf.org/viaf/138109643> .
+
+<https://www.wikidata.org/wiki/Q61> a rico:Place;
+    rdfs:label "Washington, D.C."@pt;
+    rico:hasOrHadCoordinates geonames:4140963;
+    rico:isOrWasLocationOf <http://viaf.org/viaf/159805885> .
+
+<ex:E04_C/010-001_053> a rico:Record;
+    rdfs:label "Carta do Smithsonian Institution a Joaquim José da Costa de Macedo, Secretário."@pt;
+    rico:hasOrHadName "Carta do Smithsonian Institution a Joaquim José da Costa de Macedo, Secretário."@pt;
+    rico:hasCreationDate "1849-01-01"^^xsd:date;
+    rico:hasDocumentaryFormType "Correspondência"@pt;
+    rico:hasOrHadLanguage "Inglês"@pt;
+    rico:RecordState "Original"@pt;
+    rico:recordResourceToInstantiationRelationHasTarget <ex:E06_C/010-001_053>;
+    rico:hasSender <http://viaf.org/viaf/99489376>;
+    rico:hasSender <http://viaf.org/viaf/52608262>;
+    rico:hasReceiver <http://viaf.org/viaf/30292606>;
+    rico:ActivityDocumentationRelation <ex:E15_C/010-001_001>;
+    rico:hasorHadHolder <http://viaf.org/viaf/131912229>;
+    rico:authenticityNote "Contém assinatura."@pt;
+    rico:isAssociatedWithPlace <https://www.wikidata.org/wiki/Q61>;
+    rico:scopeAndContent "Reporta e informa acerca do envio do 1.º Vol. do 'Linnean Transactions' 'Smithsonian Constitutions to Knowledge'."@pt .
+
+<ex:E06_C/010-001_053> a rico:Instantiation;
+    rdfs:label "Instanciação - Carta do Smithsonian Institution a Joaquim José da Costa de Macedo, Secretário."@pt;
+    rico:hasOrHadName  "Instanciação - Carta do Smithsonian Institution a Joaquim José da Costa de Macedo, Secretário."@pt;
+    rico:hasorHadHolder <http://viaf.org/viaf/131912229>;
+    rico:creationDate "1849-01-01"^^xsd:date;
+    rico:CarrierExtent "1 f."@pt;
+    rico:CarrierType "Papel"@pt;
+    rico:productionTechnique "Manuscrito"@pt .
+
+<http://viaf.org/viaf/131912229> rdfs:label "\"Academia das Ciências de Lisboa\""@pt .
+
+<http://viaf.org/viaf/30292606> rdf:type rico:Person;
+    rdfs:label "Macedo, Joaquim José da Costa de";
+    rico:hasOrHadName "Macedo, Joaquim José da Costa de";
+    rico:isOrWasMemberOf <http://viaf.org/viaf/131912229>;
+    rico:hasOrHadIdentifier "PT/ACL/ACL/C/001/1798-03-31/JJCM"^^xsd:localID;
+    rico:hasOrHadOccupationOfType <https://www.wikidata.org/wiki/Q6501749>;
+    rico:performsOrPerformed <ex:E15_C/010-001_001>;
+    rico:isSuccessorOf <http://viaf.org/viaf/76306730>;
+    rico:hasSuccessor <http://viaf.org/viaf/19966621>;
+    rico:generalDescription: "Joaquim José da Costa de Macedo (1777-1867) exerceu o cargo de Secretário da ACL, entre 1834 e 1856."@pt .
+
+<http://viaf.org/viaf/76306730> rdfs:label "\"Pereira, José Maria Dantas\"" .
+<http://viaf.org/viaf/19966621> rdfs:label "\"Coelho, José Maria Latino\"" .
+
+<http://viaf.org/viaf/99489376> a rico:Person;
+    rdfs:label "Henry, Joseph";
+    rico:hasOrHadName "Bertini, Bernardino";
+    rico:isOrWasMemberOf <http://viaf.org/viaf/159805885>;
+    rico:hasOrHadOccupationOfType <https://www.wikidata.org/wiki/Q6501749>;
+    rico:performsOrPerformed <ex:E15_C/010-001_001> .
+
+<http://viaf.org/viaf/52608262> a rico:Person;
+    rdfs:label "Coffin Jewett, Charles";
+    rico:hasOrHadName "Coffin Jewett, Charles";
+    rico:isOrWasMemberOf <http://viaf.org/viaf/159805885>;
+    rico:hasOrHadOccupationOfType <https://www.wikidata.org/wiki/Q182436>;
+    rico:performsOrPerformed <ex:E15_C/010-001_001> .
+
+<https://www.wikidata.org/wiki/Q6501749> rdfs:label "\"Secretário-geral\""@pt .
+<https://www.wikidata.org/wiki/Q182436> rdfs:label "\"Bibliotecário\""@pt .
+<ex:E15_C/010-001_001> rdfs:label "\"Permuta bibliográfica\""@pt .

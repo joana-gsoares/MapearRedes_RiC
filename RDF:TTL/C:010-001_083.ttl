@@ -1,0 +1,114 @@
+@base <http://example.com/base/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix ricdft: <https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#> .
+@prefix ricrst: <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+
+<ex:E03_C/010-001_F> a rico:RecordSet;
+    rdfs:label "Fundo do Arquivo da Academia das Cências de Lisboa"@pt;
+    rico:hasRecordSetType ricrst:Fonds;
+    rico:hasOrHadIdentifier "PT/ACL/ACL"^^xsd:localID;
+    rico:hasOrHadName "Fundo do Arquivo da Academia das Cências de Lisboa"@pt;
+    rico:scopeAndContent "O Fundo da Academia das Ciências de Lisboa conserva documentação de natureza histórica, testemunha dos fluxos informacionais intrínsecos à sua orgânica institucional e estrutura interna."@pt;
+    rico:hasOrHadHolder <http://viaf.org/viaf/131912229>;
+    rico:hasBeginningDate "1780"^^xsd:date;
+    rico:hasEndDate "1978"^^xsd:date;
+    rico:includesOrIncluded <ex:E03_C/010-001> .
+
+<ex:E03_C/010-001> a rico:RecordSet;
+    rdfs:label "Correspondência entre Corpos Científicos"@pt;
+    rico:hasRecordSetType ricrst:Series;
+    rico:hasOrHadIdentifier "PT/ACL/ACL/C/010-001"^^xsd:localID;
+    rico:hasOrHadName "Correspondência entre Corpos Científicos"@pt;
+    rico:scopeAndContent "Série documental que integra a correspondência recebida de organizações congéneres estrangeiras."@pt;
+    rico:hasOrHadHolder <http://viaf.org/viaf/131912229>;
+    rico:hasBeginningDate "1802"^^xsd:date;
+    rico:hasEndDate "1978"^^xsd:date;
+    rico:RecordResourceExtent "[250] cartas"@pt;
+    rico:conditionsOfAccess "Acesso Condicionado"@pt .
+
+<http://viaf.org/viaf/131912229> a rico:CorporateBody;
+    rdfs:label "Academia das Ciências de Lisboa"@pt;
+    rico:hasOrHadName "Academia das Ciências de Lisboa"@pt;
+    rico:date "1780"^^xsd:date;
+    rico:hasOrHadCorporateBodyType <https://www.wikidata.org/wiki/Q955824>;
+    rico:isAssociatedWithPlace <https://www.wikidata.org/wiki/Q597> .
+
+<http://viaf.org/viaf/134464974> a rico:CorporateBody;
+    rdfs:label "Sociedad Mexicana de Geografía y Estadística"@es;
+    rico:hasOrHadName "Sociedad Mexicana de Geografía y Estadística"@es;
+    rico:date "1833"^^xsd:date;
+    rico:hasOrHadCorporateBodyType <https://www.wikidata.org/wiki/Q955824>;
+    rico:isAssociatedWithPlace <https://www.wikidata.org/wiki/Q1489> .
+
+<https://www.wikidata.org/wiki/Q955824> rdfs:label "\"Sociedade científica\""@pt .
+
+<ex:E15_C/010-001_003> a rico:Activity;
+    rdfs:label "Informação"@pt;
+    rico:activityType "Informação"@pt .
+
+<https://www.wikidata.org/wiki/Q597> a rico:Place;
+    rdfs:label "Lisboa"@pt;
+    rico:hasOrHadCoordinates geonames:2267057;
+    rico:isOrWasLocationOf <http://viaf.org/viaf/138109643> .
+
+<https://www.wikidata.org/wiki/Q1489> a rico:Place;
+    rdfs:label "Cidade do México"@pt;
+    rico:hasOrHadCoordinates geonames:3530597;
+    rico:isOrWasLocationOf <http://viaf.org/viaf/316880768> .
+
+<ex:E04_C/010-001_083> a rico:Record;
+    rdfs:label "Carta da Sociedad Mexicana de Geografía y Estadística a José Maria Latino Coelho, Secretário."@pt;
+    rico:hasOrHadName "Carta da Sociedad Mexicana de Geografía y Estadística a José Maria Latino Coelho, Secretário."@pt;
+    rico:hasCreationDate "1881-01-30"^^xsd:date;
+    rico:hasDocumentaryFormType "Correspondência"@pt;
+    rico:hasOrHadLanguage "Espanhol"@pt;
+    rico:RecordState "Original"@pt;
+    rico:recordResourceToInstantiationRelationHasTarget <ex:E06_C/010-001_083>;
+    rico:hasSender <http://viaf.org/viaf/29553746>;
+    rico:hasReceiver <http://viaf.org/viaf/19966621>;
+    rico:ActivityDocumentationRelation <ex:E15_C/010-001_003>;
+    rico:hasorHadHolder <http://viaf.org/viaf/131912229>;
+    rico:authenticityNote "Contém assinatura."@pt;
+    rico:isAssociatedWithPlace <https://www.wikidata.org/wiki/Q1489>;
+    rico:scopeAndContent "Reporta-se a informar acerca do novo constitutivo orgânico da corporação."@pt .
+
+<ex:E06_C/010-001_083> a rico:Instantiation;
+    rdfs:label "Instanciação - Carta da Sociedad Mexicana de Geografía y Estadística a José Maria Latino Coelho, Secretário."@pt;
+    rico:hasOrHadName  "Instanciação - Carta da Sociedad Mexicana de Geografía y Estadística a José Maria Latino Coelho, Secretário."@pt;
+    rico:hasorHadHolder <http://viaf.org/viaf/131912229>;
+    rico:creationDate "1881-01-30"^^xsd:date;
+    rico:CarrierExtent "1 f."@pt;
+    rico:CarrierType "Papel"@pt;
+    rico:productionTechnique "Impresso"@pt .
+
+<http://viaf.org/viaf/131912229> rdfs:label "\"Academia das Ciências de Lisboa\""@pt .
+
+<http://viaf.org/viaf/19966621> rdf:type rico:Person;
+    rdfs:label "Coelho, José Maria Latino";
+    rico:hasOrHadName "Coelho, José Maria Latino";
+    rico:isOrWasMemberOf <http://viaf.org/viaf/131912229>;
+    rico:hasOrHadIdentifier "PT/ACL/ACL/C/001/1855-05-18/JMLC"^^xsd:localID;
+    rico:hasOrHadOccupationOfType <https://www.wikidata.org/wiki/Q6501749>;
+    rico:performsOrPerformed <ex:E15_C/010-001_003>;
+    rico:isSuccessorOf <http://viaf.org/viaf/30292606>;
+    rico:hasSuccessor <http://viaf.org/viaf/12303053>;
+    rico:generalDescription: "José Maria Latino Coelho (1825-1891) exerceu o cargo de Secretário da ACL, entre 1856 e 1891."@pt .
+
+<http://viaf.org/viaf/30292606> rdfs:label "\"Macedo, Joaquim José da Costa de\"" .
+<http://viaf.org/viaf/12303053> rdfs:label "\"Chagas, Manuel Joaquim Pinheiro\"" .
+
+<http://viaf.org/viaf/29553746> a rico:Person;
+    rdfs:label "Peza, Juan de Dios";
+    rico:hasOrHadName "Peza, Juan de Dios";
+    rico:isOrWasMemberOf <http://viaf.org/viaf/134464974>;
+    rico:hasOrHadOccupationOfType <https://www.wikidata.org/wiki/Q6501749>;
+    rico:performsOrPerformed <ex:E15_C/010-001_003> .
+
+<https://www.wikidata.org/wiki/Q6501749> rdfs:label "\"Secretário-geral\""@pt .
+<ex:E15_C/010-001_003> rdfs:label "\"Informação\""@pt .
