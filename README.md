@@ -6,7 +6,7 @@ Este repositório foi criado no âmbito do trabalho final do [Mestrado em Ciênc
 - mapeamento tabular da informação em .excel;
 - declarações dos grafos de conhecimento em .json [Correspondencia_ACL];
 
-Disponibiliza-se igualmente o acesso à digitalização integral de cada um das cartas descritas através deste link.
+Disponibiliza-se igualmente o acesso à digitalização integral de cada uma das cartas descritas, através desta [drive](https://drive.google.com/drive/folders/1oBIWkRAHlokDXV6omfk2B71a_sC5Tmp5?usp=share_link).
 
 Assim que a versão final da dissertação estiver concluída e publicada no repositório académico, disponibilizar-se-á o link para a consulta da mesma.
 
@@ -16,6 +16,6 @@ This repository was created as part of the MSc thesis in [Documentation and Info
 - .excel spreadsheets mapping tables;
 - .json statements for the knowledge graphs [Correspondencia_ACL];
   
-The complete digitalization of each of the letters described is also available via this link.
+The complete digitalization of each of the letters described is also available via [drive](https://drive.google.com/drive/folders/1oBIWkRAHlokDXV6omfk2B71a_sC5Tmp5?usp=share_link).
 
 As soon as the final version of the thesis is completed and published in the academic repository, the link will be provided for consultation and further context.
