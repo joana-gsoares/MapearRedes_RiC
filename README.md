@@ -2,7 +2,7 @@
 
 ### @pt
 Este repositório foi criado no âmbito do trabalho final do [Mestrado em Ciências da Documentação e Informação (FL-UL)](https://www.ulisboa.pt/curso/mestrado/ciencias-da-documentacao-e-informacao). Nele encontram-se disponíveis os materiais desenvolvidos no decorrer do projeto "_Mapear as redes de intercâmbio científico: uma abordagem relacional da correspondência estrangeira do Arquivo da Academia das Ciências de Lisboa_":
-- formatos codificados da descrição arquivística em .[RDF/TTL](https://www.w3.org/TR/rdf12-concepts/) aplicando a [Ontologia - Records in Contexts (1.0)](https://www.ica.org/standards/RiC/RiC-O_1-0-2.html) do [ICA-EGAD](https://github.com/ICA-EGAD);
+- formatos codificados da descrição arquivística em [RDF/TTL](https://www.w3.org/TR/rdf12-concepts/), com a aplicação da [Ontologia - Records in Contexts (1.0)](https://www.ica.org/standards/RiC/RiC-O_1-0-2.html), do [ICA-EGAD](https://github.com/ICA-EGAD);
 - mapeamento tabular da informação em .excel;
 - declarações dos grafos de conhecimento em .json [Correspondencia_ACL];
 
